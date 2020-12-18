@@ -1,5 +1,5 @@
-# FindByImage
-Find By Image - Reverse Image Without Using WebView (Android App)
+# FindByImage Android App
+Find By Image - Reverse Image Without Using WebView
 
 **How It Works**
 - Using Web Scraping Method
