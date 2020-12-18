@@ -14,5 +14,6 @@ Find By Image - Reverse Image Without Using WebView
 - ```com.github.bumptech.glide:glide:4.11.0```
 - ```com.google.code.gson:gson:2.8.5```
 
-
-*sorry for my bad code, im a beginner developer, just enjoy*
+<br>
+<br>
+sorry for my bad code, im a beginner developer, just enjoy
