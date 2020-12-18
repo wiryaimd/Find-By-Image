@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_card"
+    android:layout_marginTop="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_color4"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/history_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_color2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gallery">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/history_link"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/history_img"
+            android:fontFamily="@font/sflight"
+            android:maxLength="50"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

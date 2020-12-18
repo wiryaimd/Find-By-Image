@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_color4"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dialogmsg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/sfbold"
+            android:text="Info"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/dialogmsg_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialogmsg_title"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/sfreguler"
+            android:layout_marginBottom="6dp"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/dialogmsg_btnok"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/dialogmsg_msg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/custom_color1"
+            android:text="Ok"
+            android:textColor="@color/color1"
+            android:textSize="20sp">
+
+        </Button>
+
+</RelativeLayout>

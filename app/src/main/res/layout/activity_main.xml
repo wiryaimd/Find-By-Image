@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/main_appbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/toolbar_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="?attr/colorPrimary" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/main_appbarlayout">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/main_loading"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/main_tvloadinfo"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:fontFamily="@font/sflight"
+        android:text="Looking for image please wait..."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom_color3"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@color/color1"
+        app:itemRippleColor="@color/colorPrimaryDark"
+        app:itemTextColor="@color/color1"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_main">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

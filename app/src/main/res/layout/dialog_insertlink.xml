@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_color4">
+
+    <EditText
+        android:id="@+id/dialoglink_edt"
+        android:layout_margin="12dp"
+        android:hint="Insert link here..."
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+    </EditText>
+
+    <Button
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/sfreguler"
+        android:textSize="20sp"
+        android:textColor="@color/color1"
+        android:text="Ok"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialoglink_btnok"
+        android:layout_below="@+id/dialoglink_edt"
+        android:layout_width="80dp"
+        android:background="@drawable/custom_color1"
+        android:layout_height="40dp">
+
+    </Button>
+
+</RelativeLayout>

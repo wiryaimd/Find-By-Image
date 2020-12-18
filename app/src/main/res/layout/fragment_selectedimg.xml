@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/selectimg_relative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/custom_color2"
+        android:gravity="center_vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/selectimg_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_color2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_gallery">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/selectimg_imgdone"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="6dp"
+            android:layout_toEndOf="@id/selectimg_img">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/selectimg_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="6dp"
+            android:layout_toEndOf="@id/selectimg_loading"
+            android:src="@drawable/ic_cancel">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/selectimg_uploading"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/selectimg_img"
+            android:fontFamily="@font/sfbold"
+            android:gravity="center_vertical"
+            android:text="Uploading..."
+            android:textSize="16sp">
+
+        </TextView>
+
+        <ProgressBar
+            android:id="@+id/selectimg_loading2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/selectimg_uploading"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+        <ProgressBar
+            android:id="@+id/selectimg_loading"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@id/selectimg_loading2"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selectimg_loadmoreimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/selectimg_relative1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_color4"
+        android:drawableStart="@drawable/ic_reload"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/sfbold"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:text="Load more Image"
+        android:textColor="@color/color2"
+        android:textSize="16sp"
+        android:visibility="gone">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectimg_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectimg_relative1"
+        android:layout_marginTop="6dp"
+        android:clipToPadding="false"
+        android:paddingStart="0dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="6dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4">
+
+    <RelativeLayout
+        android:id="@+id/showimgfull_relative1"
+        android:background="@drawable/custom_color5"
+        android:layout_width="match_parent"
+        android:padding="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/showimgfull_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/showimgfull_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/showimgfull_relative1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/custom_color6"
+            android:id="@+id/showimgfull_linearcopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:id="@+id/showimgfull_copylink"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_copy">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sflight"
+                android:text="Copy Link"
+                android:textColor="@color/color1"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/custom_color6"
+            android:id="@+id/showimgfull_lineardownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:id="@+id/showimgfull_downloadimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_download">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sflight"
+                android:text="Download"
+                android:textColor="@color/color1"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
