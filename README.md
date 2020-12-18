@@ -3,7 +3,8 @@ Find By Image - Reverse Image Without Using WebView
 
 **How It Works**
 - Using Web Scraping Method
-- Using Jsoup & search image with https://images.google.com/searchbyimage?image_url=www.example.com/img.jpg
+- Using Jsoup & search image with 
+  https://images.google.com/searchbyimage?image_url=www.example.com/img.jpg
 
 **Dependency in my app**
 - ```org.jsoup:jsoup:1.13.1```
