@@ -13,3 +13,6 @@ Find By Image - Reverse Image Without Using WebView
 - ```androidx.cardview:cardview:1.0.0```
 - ```com.github.bumptech.glide:glide:4.11.0```
 - ```com.google.code.gson:gson:2.8.5```
+
+
+sorry for my bad code, im a beginner developer, just enjoy
