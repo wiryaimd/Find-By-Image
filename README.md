@@ -17,4 +17,4 @@ Find By Image (Android App)
 [Get it on PlayStore](https://play.google.com/store/apps/details?id=com.wiryaimd.findbyimage)
 <br>
 <br>
-sorry for my bad code, im a beginner developer, just enjoy
+sorry for my bad code, just enjoy
