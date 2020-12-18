@@ -15,4 +15,4 @@ Find By Image - Reverse Image Without Using WebView
 - ```com.google.code.gson:gson:2.8.5```
 
 
-sorry for my bad code, im a beginner developer, just enjoy
+*sorry for my bad code, im a beginner developer, just enjoy*
