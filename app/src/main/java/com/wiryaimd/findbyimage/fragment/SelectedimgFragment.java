@@ -67,7 +67,7 @@ public class SelectedimgFragment extends Fragment {
 
     private RewardedAd rewardedAd;
 
-    public static final String BASEIMGURL = "https://res.cloudinary.com/dsihi1kia/image/upload/";
+    public static final String BASEIMGURL = "https://res.cloudinary.com/username/image/upload/";
 
     public SelectedimgFragment(Context context, Uri imguri) {
         this.context = context;
@@ -120,7 +120,7 @@ public class SelectedimgFragment extends Fragment {
             loading.setVisibility(View.VISIBLE);
             tvloadmoreimg.setVisibility(View.GONE);
 
-            requestid = MediaManager.get().upload(imguri).unsigned("mepwkusn")
+            requestid = MediaManager.get().upload(imguri).unsigned("username")
                     .option("public_id", fileid)
                     .option("connect_timeout", 180)
                     .option("read_timeout", 360)
@@ -183,7 +183,7 @@ public class SelectedimgFragment extends Fragment {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
             imgbitmap.compress(Bitmap.CompressFormat.JPEG, 80, stream);
 
-            requestid = MediaManager.get().upload(stream.toByteArray()).unsigned("mepwkusn")
+            requestid = MediaManager.get().upload(stream.toByteArray()).unsigned("username")
                     .option("public_id", fileid)
                     .option("connect_timeout", 180)
                     .option("read_timeout", 360)
